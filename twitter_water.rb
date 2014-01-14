@@ -48,6 +48,7 @@ end
 def find_volume(arr3)
 	remove_duplicate_maxs(arr3)
 	volume = 0
+
 	return "Volume: #{volume}" if $max_keys.length < 2
 
 	for c in 0...($max_keys.length - 1)
