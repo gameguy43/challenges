@@ -1,4 +1,4 @@
 Coding Challenges
 ==========
 
-For independtly attempted coding challenge solutions.
+Independtly attempted coding challenges.
