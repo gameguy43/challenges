@@ -7,10 +7,12 @@ def find_closing_parenthesis(string, index)
   i = index + 1
   closing_index = nil
 
+  return closing_index if string[index] != '('
+
   while closing_index == nil
     if string[i] == '('
       depth += 1
-    elsif ( string[i] == ')' && depth == 0)
+    elsif ( string[i] == ')' && depth == 0 )
       closing_index = i
     elsif string[i] == ')'
       depth -= 1
