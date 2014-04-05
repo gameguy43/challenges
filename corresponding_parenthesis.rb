@@ -17,6 +17,7 @@ def find_closing_parenthesis(string, index)
     elsif string[i] == ')'
       depth -= 1
     end
+    break if i == string.length - 1
     i += 1
   end
 
