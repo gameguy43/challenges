@@ -1,5 +1,5 @@
 # given a string and the position of an opening parenthesis, find the corresponding closing parenthesis index
-# last updated April 4 2014
+# completed April 4 2014
 
 def find_closing_parenthesis(string, index)
 
@@ -23,7 +23,3 @@ def find_closing_parenthesis(string, index)
 
   return closing_index
 end
-
-# edge cases:
-#   parenthesis do not all have corresponding end parenthesis
-#   string[index] is not a parenthesis
