@@ -7,10 +7,16 @@ class Stack
   def initialize(*values)
     @values = values
     @largest = nil
+    values.each do |v|
+      if ( @largest.nil? || ( !@largest.nil? && !v.nil? && @largest < v ) )
+        @largest = v
+      end
+    end
   end
 
   def push(value)
     @values << value
+    @largest = value if ( @largest.nil? || @largest < value )
   end
 
   def pop
@@ -20,7 +26,7 @@ class Stack
   end
 
   def get_largest
-    #
+    return @largest
   end
 
 end
