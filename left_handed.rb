@@ -1,4 +1,3 @@
-
 # returns whether or not a word can be typed with only your left hand
 # completed January 4 2014
 
