@@ -2,20 +2,20 @@
 
 class Stack
 
-  attr_accessor :stack_values
+  attr_accessor :values
 
-  def initialize
-    @stack_values = []
+  def initialize(*values)
+    @values = values
     @largest = nil
   end
 
   def push(value)
-    @stack_values << value
+    @values << value
   end
 
   def pop
-    last_value = @stack_values[-1]
-    @stack_values.delete_at(-1)
+    last_value = @values[-1]
+    @values.delete_at(-1)
     return last_value
   end
 
