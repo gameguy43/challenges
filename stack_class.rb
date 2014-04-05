@@ -1,4 +1,6 @@
 # an extended stack class with a get_largest method that returns the largest element in the stack
+# push, pop and get_largest methods must have a run time of O(1)
+# last updated April 4 2014
 
 class Stack
 
@@ -8,33 +10,37 @@ class Stack
     @values = values
     @largest = nil
     @previous_largests = []
+
     values.each do |v|
-      if ( @largest.nil? || ( !@largest.nil? && !v.nil? && @largest < v ) )
+      if ( !@largest.nil? && !v.nil? && v >= @largest ) || @largest.nil?
         @largest = v
         @previous_largests << v
       end
     end
+
     return @values
   end
 
   def push(value)
     @values << value
-    if ( @largest.nil? || @largest < value )
+
+    if @largest.nil? || value >= @largest
       @largest = value
       @previous_largests << value
     end
+
     return value
   end
 
   def pop
     last_value = @values[-1]
+    @values.delete_at(-1)
 
     if last_value == @largest
       @largest = @previous_largests[-2]
       @previous_largests.delete_at(-1)
     end
 
-    @values.delete_at(-1)
     return last_value
   end
 
