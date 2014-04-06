@@ -3,11 +3,11 @@
 
 def find_closing_parenthesis(string, index)
 
+  return nil if string[index] != '('
+
   depth = 0
   i = index + 1
   closing_index = nil
-
-  return closing_index if string[index] != '('
 
   while closing_index == nil
     if string[i] == '('
