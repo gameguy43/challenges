@@ -1,6 +1,7 @@
 # given a grid (two-dimentional array) and an integer, return a boolean indicating
 # whether the integer is in the grid
 # for every row and column, values increase down and to the right as the index increases
+# completed April 12 2014
 
 
 # runtime complexity   sqrt(n) * log(n)
