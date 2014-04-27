@@ -1,3 +1,7 @@
+// find the fewest number of coins needed for a given total value
+// coin denominations are 1, 5, 7, 9, and 11
+// completed April 27 2014
+
 var coinDenoms = [1, 5, 7, 9, 11];
 
 function findMinCoins(total) { 
