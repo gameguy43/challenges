@@ -7,6 +7,7 @@ In order of completion (descending):
 
 File | Completed
 :---  | :---:
+[coin_denominations.js](../../blob/master/coin_denominations.js) | Apr 27 2014
 [find_int_in_grid.rb](../../blob/master/find_int_in_grid.rb) | Apr 12 2014
 [stock_profit.rb](../../blob/master/stock_profit.rb) | Apr 6 2014
 [corresponding_parenthesis.rb](../../blob/master/corresponding_parenthesis.rb) | Apr 4 2014
