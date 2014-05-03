@@ -33,8 +33,8 @@ class AccessStatistics
 
     # avg
     @number_of_values += 1
-    @avg = ( @sum_of_values + value ) / @number_of_values.to_f
-    @sum_of_values += value
+    @sum_of_values    += value
+    @avg = @sum_of_values / @number_of_values.to_f
 
     # mode
     @value_to_occurences[value] += 1
