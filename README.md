@@ -7,6 +7,7 @@ In order of completion (descending):
 
 File | Completed
 :---  | :---:
+[character_count.js](../../blob/master/character_count.js) | May 5 2014
 [string_permutation.js](../../blob/master/string_permutation.js) | May 4 2014
 [max_min_avg_mode.rb](../../blob/master/max_min_avg_mode.rb) | May 1 2014
 [coin_denominations.js](../../blob/master/coin_denominations.js) | Apr 27 2014
