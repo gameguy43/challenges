@@ -8,14 +8,12 @@
 function countCharacters(string) {
   var charCountStr = "";
   var charToCount = {};
-  var character;
 
   for (var i = 0; i < string.length; i++) {
-    character = string[i];
-    if ( !charToCount[character] ) {
-      charToCount[character] = 1;
+    if ( !charToCount[string[i]] ) {
+      charToCount[string[i]] = 1;
     } else {
-      charToCount[character] ++;
+      charToCount[string[i]] ++;
     }
   }
 
