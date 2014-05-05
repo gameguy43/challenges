@@ -1,4 +1,5 @@
 // given two strings, return a boolean indicating if they are permutaions of each other
+// completed May 4 2014
 
 var string1 = "hello";
 var string2 = "lolhe";
