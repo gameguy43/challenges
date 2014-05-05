@@ -4,29 +4,26 @@
 function arePermutations(stringA, stringB) {
   if (stringA.length != stringB.length ) return false;
 
-  var charToOccurenceA = populateCharOccurences(stringA);
-  var charToOccurenceB = populateCharOccurences(stringB);
+  var charToOccurA = populateCharOccur(stringA);
+  var charToOccurB = populateCharOccur(stringB);
+  var chars = Object.keys(charToOccurA);
 
-  var characters = Object.keys(charToOccurenceA);
-
-  for (var i = 0; i < characters.length; i++) {
-    if (charToOccurenceA[characters[i]] != charToOccurenceB[characters[i]]) {
+  for (var i = 0; i < chars.length; i++) {
+    if (charToOccurA[chars[i]] != charToOccurB[chars[i]]) {
       return false;
     }
   }
-
   return true;
-
 }
 
-function populateCharOccurences(string) {
-  var charToOccurence = {};
+function populateCharOccur(string) {
+  var charToOccur = {};
   for (var i = 0; i < string.length; i++) {
-    if ( !charToOccurence[string[i]] ) {
-      charToOccurence[string[i]] = 1;
+    if ( !charToOccur[string[i]] ) {
+      charToOccur[string[i]] = 1;
     } else {
-      charToOccurence[string[i]] ++;
+      charToOccur[string[i]] ++;
     }
   }
-  return charToOccurence;
+  return charToOccur;
 }
