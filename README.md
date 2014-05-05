@@ -7,6 +7,7 @@ In order of completion (descending):
 
 File | Completed
 :---  | :---:
+[string_permutation.js](../../blob/master/string_permutation.js) | May 4 2014]
 [max_min_avg_mode.rb](../../blob/master/max_min_avg_mode.rb) | May 1 2014
 [coin_denominations.js](../../blob/master/coin_denominations.js) | Apr 27 2014
 [find_int_in_grid.rb](../../blob/master/find_int_in_grid.rb) | Apr 12 2014
