@@ -22,15 +22,16 @@ function arePermutations(stringA, stringB) {
 
 }
 
-function populateCharOccurence(string) {
+function populateCharOccurences(string) {
   var charToOccurence = {};
   for (var i = 0; i < string.length; i++) {
-    if ( !charToOccurence[i] ) {
-      charToOccurence[i] = 1;
+    if ( !charToOccurence[string[i]] ) {
+      charToOccurence[string[i]] = 1;
     } else {
-      charToOccurence[i] ++;
+      charToOccurence[string[i]] ++;
     }
   }
+  return charToOccurence;
 }
 
 arePermutations(string1, string2);
