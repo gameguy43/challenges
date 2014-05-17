@@ -1,6 +1,11 @@
-var array = [10, -9, -13, 4, 63, 0, 1]
+// given an integer k and an array of integers, return a boolean indicating
+// whether there are two integers in the array whose sum is k
+// completed May 16 2014
 
-function sum_in_array(int, array) {
+// run time   O(n)
+// memory     O(n)
+
+function sum_in_array(k, array) {
   var valueToIndex = {};
 
   for (var i = 0; i < array.length; i++) {
@@ -8,11 +13,10 @@ function sum_in_array(int, array) {
   }
 
   for (var i = 0; i < array.length; i++) {
-    if ( valueToIndex[int - array[i]] && valueToIndex[int - array[i]] != i ) {
+    if ( valueToIndex[k - array[i]] && valueToIndex[k - array[i]] != i ) {
       return true;
     }
   }
 
   return false;
-
 }
