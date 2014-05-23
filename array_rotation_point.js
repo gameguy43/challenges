@@ -2,7 +2,7 @@
 // return the index of the lowest value in the array
 // completed May 22 2014
 
-// run time   O(n)
+// run time   O(log(n))
 // memory     O(1)
 
 function rotationPoint(array, min, max) {
