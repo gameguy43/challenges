@@ -13,9 +13,21 @@ function rotationPoint(array, min, max) {
 
   // if the middle value is greater than the next value, return the next value's index
 
+  if ( midValue > nextValue ) {
+    return midIndex + 1;
+  }
+
   // else if the middle value is less than the last value, rerun between first and middle
 
+  else if ( midValue < array[array.length - 1] ) {
+    return rotationPoint(array, min, midIndex);
+  }
+
   // else (the middle value is greater than the last value) rerun between middle and last
+
+  else {
+    return rotationPoint(array, midIndex, max);
+  }
 
 }
 
