@@ -1,4 +1,9 @@
-var testArray = [4, 5, 6, 7, 8, 1, 2, 3];
+// given a shifted, sorted array (such as [7, 8, 9, 3, 4, 5])
+// return the index of the lowest value in the array
+// completed May 22 2014
+
+// run time   O(n)
+// memory     O(1)
 
 function rotationPoint(array, min, max) {
 
@@ -7,8 +12,8 @@ function rotationPoint(array, min, max) {
   min = min || 0;
   max = max || array.length - 1;
 
-  var midIndex = Math.floor( (max + min) / 2 );
-  var midValue = array[midIndex];
+  var midIndex  = Math.floor( (max + min) / 2 );
+  var midValue  = array[midIndex];
   var nextValue = array[midIndex + 1];
 
   if ( midValue > nextValue ) {
