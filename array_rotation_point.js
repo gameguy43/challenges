@@ -2,6 +2,8 @@ var testArray = [4, 5, 6, 7, 8, 1, 2, 3];
 
 function rotationPoint(array, min, max) {
 
+  if ( array.length === 1 ) return 0;
+
   min = min || 0;
   max = max || array.length - 1;
 
@@ -34,3 +36,5 @@ function rotationPoint(array, min, max) {
 // edge cases
 
 // array is sorted
+
+// array has one element
