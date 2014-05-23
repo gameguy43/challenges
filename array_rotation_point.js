@@ -2,7 +2,7 @@ var testArray = [4, 5, 6, 7, 8, 1, 2, 3];
 
 function rotationPoint(array, min, max) {
 
-  if ( array.length === 1 ) return 0;
+  if ( array.length === 1 || array[0] < array[array.length - 1] ) return 0;
 
   min = min || 0;
   max = max || array.length - 1;
