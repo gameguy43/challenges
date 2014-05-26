@@ -5,7 +5,7 @@
 // run time   O(n)
 // memory     O(n)
 
-function sum_in_array(k, array) {
+function sumInArray(k, array) {
   var valueToIndex = {};
 
   for (var i = 0; i < array.length; i++) {
