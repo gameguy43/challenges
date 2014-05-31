@@ -8,28 +8,20 @@ function renderJsonTree(json) {
 
   var treeString = "";
 
-  // for each key in the json hash
-    // add the key to its parent list
-    // for each of the values in its array
-      // if it's a string, add it to the key's list
-      // if it's a hash, run renderJsonTree(hash)
-
   for (var key in json) {
-    treeString += "<li>";
-    treeString += key;
-    treeString += "<ul>";
+    treeString += "<li>" + key + "<ul>";
     for (var i = 0; i < json[key].length; i++) {
-      if ( typeof(json[key][i]) === "string") {
-        treeString += "<li>" + json[key][i] + "</li>";
+      var value = json[key][i];
+      if ( typeof(value) === "string" ) {
+        treeString += "<li>" + value + "</li>";
       } else {
-        treeString += renderJsonTree(json[key][i]);
+        treeString += renderJsonTree(value);
       }
     }
-    treeString += "</ul>";
-    treeString += "</li>";
+    treeString += "</ul></li>";
   }
 
-  return treeString
+  return treeString;
 
 }
 
