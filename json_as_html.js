@@ -13,8 +13,15 @@ function renderJsonTree(json) {
       // if it's a string, add it to the key's list
       // if it's a hash, run renderJsonTree(hash)
 
-  for (var key in hash) {
+  for (var key in json) {
+    treeString += "<li>";
+    treeString += key;
+    treeString += "<ul>";
+    for (var i = 0; i < json[key].length; i++) {
 
+    }
+    treeString += "</ul>";
+    treeString += "</li>";
   }
 
   return treeString
