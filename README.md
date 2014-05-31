@@ -7,6 +7,7 @@ In order of completion (descending):
 
 File | Completed
 :---  | :---:
+[json_as_html.js](../../blob/master/json_as_html.js) | May 31 2014
 [array_rotation_point.js](../../blob/master/array_rotation_point.js) | May 22 2014
 [sum_in_array.js](../../blob/master/sum_in_array.js) | May 16 2014
 [character_count.js](../../blob/master/character_count.js) | May 5 2014
