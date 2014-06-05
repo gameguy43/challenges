@@ -4,11 +4,9 @@ def greatest_product(integers)
 
   three_greatest_numbers = [nil, nil, nil]
 
-  integers.each do |int|
-    add_greater_number(three_greatest_numbers, int)
-  end
+  integers.each { |int| add_greater_number(three_greatest_numbers, int) }
 
-  puts three_greatest_numbers
+  puts three_greatest_numbers.inject { |product, int| product * int }
 
 end
 
