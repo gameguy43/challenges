@@ -2,6 +2,14 @@ array = [1, 4, 10, 6, 2, 8, 20]
 
 def greatest_product(integers)
 
+  three_greatest_numbers = [nil, nil, nil]
+
+  integers.each do |int|
+    add_greater_number(three_greatest_numbers, int)
+  end
+
+  puts three_greatest_numbers
+
 end
 
 def add_greater_number(three_numbers, int, index=-1)
