@@ -1,12 +1,18 @@
+# given an array with at least 3 integers, find the largest product of
+# 3 integers in the array
+# last updated June 4 2014
+
 array = [1, 4, 10, 6, 2, 8, 20]
 
 def greatest_product(integers)
 
   three_greatest_numbers = [nil, nil, nil]
 
-  integers.each { |int| add_greater_number(three_greatest_numbers, int) }
+  integers.each do |int|
+    add_greater_number(three_greatest_numbers, int)
+  end
 
-  puts three_greatest_numbers.inject { |product, int| product * int }
+  return three_greatest_numbers.inject { |product, int| product * int }
 
 end
 
@@ -22,3 +28,5 @@ def add_greater_number(three_numbers, int, index=-1)
 end
 
 greatest_product(array)
+
+# does not work with two negative numbers
