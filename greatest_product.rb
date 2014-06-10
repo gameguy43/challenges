@@ -12,19 +12,18 @@ def greatest_product(integers)
     add_greater_number(three_greatest_numbers, int)
   end
 
-  return three_greatest_numbers.inject { |product, int| product * int }
+  # return three_greatest_numbers.inject { |product, int| product * int }
 
 end
 
-def add_greater_number(three_numbers, int, index=-1)
-  return three_numbers if index < -3
-  if !three_numbers[index] || int > three_numbers[index]
-    replaced_number = three_numbers[index]
-    three_numbers[index] = int
-    return add_greater_number(three_numbers, replaced_number, index - 1)
-  else
-    return add_greater_number(three_numbers, int, index - 1)
+def add_greater_number(three_numbers, int)
+  for i in 0..2
+    if three_numbers[i].nil? || int > three_numbers[i]
+      three_numbers.insert(i, int).pop
+      break
+    end
   end
+  return three_numbers
 end
 
 greatest_product(array)
