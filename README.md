@@ -7,6 +7,7 @@ In order of completion (descending):
 
 File | Completed
 :---  | :---:
+[greatest_product.rb](../../blob/master/greatest_product.rb) | June 11 2014
 [json_as_html.js](../../blob/master/json_as_html.js) | May 31 2014
 [array_rotation_point.js](../../blob/master/array_rotation_point.js) | May 22 2014
 [sum_in_array.js](../../blob/master/sum_in_array.js) | May 16 2014
