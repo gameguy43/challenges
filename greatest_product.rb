@@ -17,17 +17,17 @@ def greatest_product(int_array)
     insert_number(two_lowest_ints,     int, false)
   end
 
-  # find the product of the three highest ints, and the product of the two lowest and highest int
+  # find the product of the three highest ints, and the product of the two lowest ints and the highest int
   positive_product = three_greatest_ints[0] * three_greatest_ints[1] * three_greatest_ints[2]
   negative_product = three_greatest_ints[0] * two_lowest_ints[0]     * two_lowest_ints[1]
 
-  # compare the two prodcuts and return whichever is greater
+  # compare the two products and return whichever is greater
   positive_product > negative_product ? ( return positive_product ) : ( return negative_product )
 end
 
                 # array     int  boolean
 def insert_number(integers, int, greater)
-  # for reach integer in the highest of lowest int array
+  # for reach integer in the highest or lowest int array
   for i in 0...integers.length
 
     # if the integer in the array is nil or greater or less than the integer we are inserting
